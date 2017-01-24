@@ -36,7 +36,8 @@
         </activity>
         <activity android:name=".Register" />
         <activity android:name=".Home" />
-        <activity android:name=".Projects"></activity>
+        <activity android:name=".Projects" />
+        <activity android:name=".AddProject"></activity>
     </application>
 
 </manifest>

@@ -96,6 +96,10 @@
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
+        "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_project.xml",
+        "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\layout\\activity_add_project.xml"
+    },
+    {
         "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_projects.xml",
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\layout\\activity_projects.xml"
     },

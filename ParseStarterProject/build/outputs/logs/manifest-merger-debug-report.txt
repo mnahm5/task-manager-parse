@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:9:1-42:12
+ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:9:1-43:12
 	package
 		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:10:5-32
 		INJECTED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\
 	android:name
 		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:13:22-76
 application
-ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:15:5-40:19
+ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:15:5-41:19
 MERGED from [com.android.support:appcompat-v7:22.2.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 	android:label
@@ -72,9 +72,13 @@ ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\
 	android:name
 		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:38:19-39
 activity#com.parse.starter.Projects
-ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:39:9-55
+ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:39:9-46
 	android:name
 		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:39:19-43
+activity#com.parse.starter.AddProject
+ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:40:9-57
+	android:name
+		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:40:19-45
 uses-sdk
 INJECTED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.2.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:20:5-43
