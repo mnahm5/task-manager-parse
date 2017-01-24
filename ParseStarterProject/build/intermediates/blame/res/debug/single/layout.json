@@ -68,6 +68,10 @@
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
+        "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
         "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_list_menu_item_layout.xml"
     },
