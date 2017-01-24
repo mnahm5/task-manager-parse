@@ -3148,11 +3148,11 @@
                 "from": {
                     "file": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 606,
+                        "startOffset": 605,
                         "endColumn": 52,
-                        "endOffset": 654
+                        "endOffset": 653
                     }
                 }
             },
@@ -3167,11 +3167,11 @@
                 "from": {
                     "file": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 493,
+                        "startOffset": 492,
                         "endColumn": 58,
-                        "endOffset": 547
+                        "endOffset": 546
                     }
                 }
             },
@@ -3186,11 +3186,11 @@
                 "from": {
                     "file": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 553,
+                        "startOffset": 552,
                         "endColumn": 52,
-                        "endOffset": 601
+                        "endOffset": 600
                     }
                 }
             },
@@ -3205,11 +3205,11 @@
                 "from": {
                     "file": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 370,
+                        "startOffset": 369,
                         "endColumn": 60,
-                        "endOffset": 426
+                        "endOffset": 425
                     }
                 }
             },
@@ -3224,11 +3224,11 @@
                 "from": {
                     "file": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 431,
+                        "startOffset": 430,
                         "endColumn": 60,
-                        "endOffset": 487
+                        "endOffset": 486
                     }
                 }
             },
