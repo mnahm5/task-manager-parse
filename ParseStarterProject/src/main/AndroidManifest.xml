@@ -47,7 +47,8 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Tasks"></activity>
+        <activity android:name=".Tasks" />
+        <activity android:name=".AddTask"></activity>
     </application>
 
 </manifest>

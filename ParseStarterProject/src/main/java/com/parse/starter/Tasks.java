@@ -47,7 +47,9 @@ public class Tasks extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         if (item.getItemId() == R.id.add_task) {
-
+            Intent addTaskIntent = new Intent(getApplicationContext(), AddTask.class);
+            addTaskIntent.putExtra("ProjectId", project.getObjectId());
+            startActivity(addTaskIntent);
         }
         else if (item.getItemId() == R.id.project_details) {
             Intent intent = new Intent(getApplicationContext(), ProjectDetails.class);
