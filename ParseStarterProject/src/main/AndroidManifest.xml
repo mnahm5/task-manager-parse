@@ -37,7 +37,8 @@
         <activity android:name=".Register" />
         <activity android:name=".Home" />
         <activity android:name=".Projects" />
-        <activity android:name=".AddProject"></activity>
+        <activity android:name=".AddProject" />
+        <activity android:name=".ProjectDetails"></activity>
     </application>
 
 </manifest>

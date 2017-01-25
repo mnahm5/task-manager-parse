@@ -88,16 +88,16 @@
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
+        "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_project.xml",
+        "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\layout\\activity_add_project.xml"
+    },
+    {
         "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_menu_layout.xml"
-    },
-    {
-        "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_project.xml",
-        "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\layout\\activity_add_project.xml"
     },
     {
         "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_projects.xml",
@@ -136,12 +136,16 @@
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
-        "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_lines.xml"
+        "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_project_details.xml",
+        "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\layout\\activity_project_details.xml"
     },
     {
         "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_lines.xml"
     },
     {
         "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
@@ -160,11 +164,11 @@
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_popup_menu_item_layout.xml"
-    },
-    {
         "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_popup_menu_item_layout.xml"
     }
 ]

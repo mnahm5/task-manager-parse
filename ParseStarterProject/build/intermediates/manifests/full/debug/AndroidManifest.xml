@@ -45,6 +45,7 @@
         <activity android:name="com.parse.starter.Home" />
         <activity android:name="com.parse.starter.Projects" />
         <activity android:name="com.parse.starter.AddProject" />
+        <activity android:name="com.parse.starter.ProjectDetails" />
     </application>
 
 </manifest>
