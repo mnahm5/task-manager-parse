@@ -69,6 +69,7 @@ public class AddTask extends AppCompatActivity {
                                 "Task Saved",
                                 Toast.LENGTH_SHORT
                         ).show();
+                        finish();
                     }
                     else {
                         Toast.makeText(
