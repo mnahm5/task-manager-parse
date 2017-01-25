@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:9:1-48:12
+ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:9:1-53:12
 	package
 		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:10:5-32
 		INJECTED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\
 	android:name
 		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:13:22-76
 application
-ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:15:5-46:19
+ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:15:5-51:19
 MERGED from [com.android.support:appcompat-v7:22.2.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.0.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\AndroidManifest.xml:19:5-20
@@ -83,16 +83,20 @@ ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\
 	android:name
 		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:40:19-45
 activity#com.parse.starter.ProjectDetails
-ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:41:9-61
+ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:41:9-52
 	android:name
 		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:41:19-49
 meta-data#com.google.android.gms.version
-ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:43:9-45:69
+ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:46:9-48:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:45:13-66
+		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:48:13-66
 	android:name
-		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:44:13-58
+		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:47:13-58
+activity#com.parse.starter.Tasks
+ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:50:9-52
+	android:name
+		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:50:19-40
 uses-sdk
 INJECTED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.2.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:20:5-43

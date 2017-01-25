@@ -12,6 +12,10 @@
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_media_action.xml"
     },
     {
+        "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tasks.xml",
+        "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\layout\\activity_tasks.xml"
+    },
+    {
         "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\select_dialog_multichoice_material.xml"
     },

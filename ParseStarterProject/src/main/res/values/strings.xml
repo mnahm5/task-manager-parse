@@ -28,4 +28,7 @@
     <string name="register">Register</string>
     <string name="already_have_an_account_nsign_here">Already have an account?\nSign Here</string>
     <string name="save_changes">Save Changes</string>
+    <string name="add_task">Add Task</string>
+    <string name="project_details">Project Details</string>
+    <string name="add_a_project">Add a Project</string>
 </resources>

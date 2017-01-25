@@ -57,7 +57,7 @@ public class Projects extends AppCompatActivity {
                         lvProjects.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                             @Override
                             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                                Intent intent = new Intent(getApplicationContext(), ProjectDetails.class);
+                                Intent intent = new Intent(getApplicationContext(), Tasks.class);
                                 intent.putExtra("ProjectId", objects.get(position).getObjectId());
                                 startActivity(intent);
                             }
