@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\src\main\AndroidManifest.xml:9:1-54:12
+ADDED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\src\main\AndroidManifest.xml:9:1-55:12
 	package
 		ADDED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\src\main\AndroidManifest.xml:10:5-32
 		INJECTED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterPr
 	android:name
 		ADDED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\src\main\AndroidManifest.xml:13:22-76
 application
-ADDED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\src\main\AndroidManifest.xml:15:5-52:19
+ADDED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\src\main\AndroidManifest.xml:15:5-53:19
 MERGED from [com.google.android.gms:play-services-appindexing:9.8.0] D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.8.0\AndroidManifest.xml:18:5-19
 MERGED from [com.google.android.gms:play-services-base:9.8.0] D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.firebase:firebase-common:9.8.0] D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.8.0\AndroidManifest.xml:4:5-7:19
@@ -103,9 +103,13 @@ ADDED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterPr
 	android:name
 		ADDED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\src\main\AndroidManifest.xml:50:19-40
 activity#com.parse.starter.AddTask
-ADDED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\src\main\AndroidManifest.xml:51:9-54
+ADDED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\src\main\AndroidManifest.xml:51:9-45
 	android:name
 		ADDED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\src\main\AndroidManifest.xml:51:19-42
+activity#com.parse.starter.EditTask
+ADDED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\src\main\AndroidManifest.xml:52:9-55
+	android:name
+		ADDED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\src\main\AndroidManifest.xml:52:19-43
 uses-sdk
 INJECTED from D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.google.android.gms:play-services-appindexing:9.8.0] D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.8.0\AndroidManifest.xml:17:5-42

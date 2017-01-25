@@ -56,6 +56,7 @@
 
         <activity android:name="com.parse.starter.Tasks" />
         <activity android:name="com.parse.starter.AddTask" />
+        <activity android:name="com.parse.starter.EditTask" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

@@ -1,6 +1,7 @@
 package com.parse.starter;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,9 +13,14 @@ import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
-public class Tasks extends AppCompatActivity {
+public class Tasks extends AppCompatActivity implements TaskFeed.OnFragmentInteractionListener {
 
     private ParseObject project;
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
