@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:9:1-44:12
+ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:9:1-48:12
 	package
 		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:10:5-32
 		INJECTED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml
@@ -22,9 +22,12 @@ ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\
 	android:name
 		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:13:22-76
 application
-ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:15:5-42:19
+ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:15:5-46:19
 MERGED from [com.android.support:appcompat-v7:22.2.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:22.2.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.0.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:19:9-41
 	android:allowBackup
@@ -83,10 +86,21 @@ activity#com.parse.starter.ProjectDetails
 ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:41:9-61
 	android:name
 		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:41:19-49
+meta-data#com.google.android.gms.version
+ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:43:9-45:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:45:13-66
+	android:name
+		ADDED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml:44:13-58
 uses-sdk
 INJECTED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.2.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:22.2.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.0.0] D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml
 		INJECTED from D:\Personal_Projects\Android Course\task-manager\ParseStarterProject\src\main\AndroidManifest.xml

@@ -14,4 +14,18 @@
 
     <string name="hello_world">Hello World!</string>
     <string name="action_settings">Settings</string>
+    <string name="project_description">Project Description</string>
+    <string name="edit_project">Edit Project</string>
+    <string name="delete_project">Delete Project</string>
+    <string name="project_name">Project Name</string>
+    <string name="textview">TextView</string>
+    <string name="full_name">Full Name</string>
+    <string name="company_name">Company Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account_nsign_here">Already have an account?\nSign Here</string>
+    <string name="save_changes">Save Changes</string>
 </resources>
