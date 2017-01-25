@@ -1,10 +1,12 @@
 package com.parse.starter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,14 +26,6 @@ import java.util.List;
 import java.util.Map;
 
 public class TaskFeed extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
     private List<ParseObject> tasks = new ArrayList<>();
 
     private OnFragmentInteractionListener mListener;
@@ -40,22 +34,13 @@ public class TaskFeed extends Fragment {
 
     }
 
-    public static TaskFeed newInstance(String param1, String param2) {
-        TaskFeed fragment = new TaskFeed();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
+    public static TaskFeed newInstance() {
+        return new TaskFeed();
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
@@ -64,44 +49,52 @@ public class TaskFeed extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_task_feed, container, false);
 
-        final ListView lvTasks = (ListView) view.findViewById(R.id.lvTasks);
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("Tasks");
-        query.whereEqualTo("projectId", "g5oBQjuSl6");
-        query.orderByAscending("dueDate");
-        query.findInBackground(new FindCallback<ParseObject>() {
-            @Override
-            public void done(List<ParseObject> objects, ParseException e) {
-                if (e == null) {
-                    if (objects.size() > 0) {
-                        List<Map<String, String>> taskData = new ArrayList<Map<String, String>>();
-                        tasks = objects;
-                        for (ParseObject task: objects) {
-                            Map<String, String> taskInfo = new HashMap<String, String>();
-                            taskInfo.put("title", task.getString("title"));
-                            taskInfo.put("dueDate", task.getDate("dueDate").toString());
-                            taskData.add(taskInfo);
-                        }
-                        SimpleAdapter simpleAdapter = new SimpleAdapter(
-                                getContext(),
-                                taskData,
-                                android.R.layout.simple_expandable_list_item_2,
-                                new String[] {"title", "dueDate"},
-                                new int[] {android.R.id.text1, android.R.id.text2});
+        String projectId = null;
+        if (getArguments() != null) {
+            projectId = getArguments().getString("projectId");
+        }
 
-                        lvTasks.setAdapter(simpleAdapter);
+        final ListView lvTasks = (ListView) view.findViewById(R.id.lvTasks);
+
+        if (projectId != null) {
+            ParseQuery<ParseObject> query = ParseQuery.getQuery("Tasks");
+            query.whereEqualTo("projectId", projectId);
+            query.orderByAscending("dueDate");
+            query.findInBackground(new FindCallback<ParseObject>() {
+                @Override
+                public void done(List<ParseObject> objects, ParseException e) {
+                    if (e == null) {
+                        if (objects.size() > 0) {
+                            List<Map<String, String>> taskData = new ArrayList<Map<String, String>>();
+                            tasks = objects;
+                            for (ParseObject task: objects) {
+                                Map<String, String> taskInfo = new HashMap<String, String>();
+                                taskInfo.put("title", task.getString("title"));
+                                taskInfo.put("dueDate", task.getDate("dueDate").toString());
+                                taskData.add(taskInfo);
+                            }
+                            SimpleAdapter simpleAdapter = new SimpleAdapter(
+                                    getContext(),
+                                    taskData,
+                                    android.R.layout.simple_expandable_list_item_2,
+                                    new String[] {"title", "dueDate"},
+                                    new int[] {android.R.id.text1, android.R.id.text2});
+
+                            lvTasks.setAdapter(simpleAdapter);
+                        }
                     }
                 }
-            }
-        });
+            });
 
-        lvTasks.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(getContext(), EditTask.class);
-                intent.putExtra("taskId", tasks.get(position).getObjectId());
-                startActivity(intent);
-            }
-        });
+            lvTasks.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Intent intent = new Intent(getContext(), EditTask.class);
+                    intent.putExtra("taskId", tasks.get(position).getObjectId());
+                    startActivity(intent);
+                }
+            });
+        }
 
         return view;
     }
@@ -130,16 +123,6 @@ public class TaskFeed extends Fragment {
         mListener = null;
     }
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
