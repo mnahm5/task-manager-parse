@@ -2832,12 +2832,12 @@ containing a value of this type.
         public static final int textSpacerNoButtons=0x7f0d006c;
         public static final int thing_proto=0x7f0d003a;
         public static final int time=0x7f0d00b5;
-        public static final int timePicker=0x7f0d0092;
         public static final int title=0x7f0d0062;
         public static final int title_template=0x7f0d0067;
         public static final int top=0x7f0d0026;
         public static final int topPanel=0x7f0d0066;
         public static final int touch_outside=0x7f0d00a6;
+        public static final int tpDueDate=0x7f0d0092;
         public static final int tvDueDate=0x7f0d0090;
         public static final int tvLoginLink=0x7f0d00a4;
         public static final int tvRegisterLink=0x7f0d0099;

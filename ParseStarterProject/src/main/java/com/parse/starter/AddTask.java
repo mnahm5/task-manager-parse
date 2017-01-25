@@ -10,7 +10,9 @@ import android.widget.Spinner;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.parse.ParseException;
 import com.parse.ParseObject;
+import com.parse.SaveCallback;
 
 import java.sql.Time;
 import java.util.Calendar;
@@ -45,8 +47,38 @@ public class AddTask extends AppCompatActivity {
                     Toast.LENGTH_LONG).show();
         }
         else {
-
-
+            Date dueDate = new Date(
+                    dpDueDate.getYear(),
+                    dpDueDate.getMonth(),
+                    dpDueDate.getDayOfMonth(),
+                    tpDueDate.getCurrentHour(),
+                    tpDueDate.getCurrentMinute()
+            );
+            ParseObject task = new ParseObject("Tasks");
+            task.put("projectId", projectId);
+            task.put("title", etTaskTitle.getText().toString());
+            task.put("description", etDescription.getText().toString());
+            task.put("type", spTaskType.getSelectedItem().toString());
+            task.put("dueDate", dueDate);
+            task.saveInBackground(new SaveCallback() {
+                @Override
+                public void done(ParseException e) {
+                    if (e == null) {
+                        Toast.makeText(
+                                getApplicationContext(),
+                                "Task Saved",
+                                Toast.LENGTH_SHORT
+                        ).show();
+                    }
+                    else {
+                        Toast.makeText(
+                                getApplicationContext(),
+                                e.getMessage(),
+                                Toast.LENGTH_SHORT
+                        ).show();
+                    }
+                }
+            });
         }
     }
 }

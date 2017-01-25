@@ -60,24 +60,24 @@
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
-        "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_select_dialog_material.xml"
-    },
-    {
         "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
         "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_project.xml",
-        "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\layout\\activity_add_project.xml"
-    },
-    {
         "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_project.xml",
+        "source": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\src\\main\\res\\layout\\activity_add_project.xml"
     },
     {
         "merged": "D:\\Personal_Projects\\Android Course\\task-manager\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
