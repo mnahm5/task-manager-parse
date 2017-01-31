@@ -399,6 +399,8 @@
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="company_name">Company Name</string>
     <string name="delete_project">Delete Project</string>
+    <string name="doing">Doing</string>
+    <string name="done">Done</string>
     <string name="edit_project">Edit Project</string>
     <string name="email_address">Email Address</string>
     <string name="full_name">Full Name</string>
@@ -416,6 +418,7 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="textview">TextView</string>
     <string name="title_activity_add_task">AddTask</string>
+    <string name="to_do">To Do</string>
     <string name="username">Username</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

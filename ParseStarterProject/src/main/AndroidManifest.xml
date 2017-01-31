@@ -49,7 +49,8 @@
 
         <activity android:name=".Tasks" />
         <activity android:name=".AddTask" />
-        <activity android:name=".EditTask"></activity>
+        <activity android:name=".EditTask" />
+        <activity android:name=".SpecificListTasks"></activity>
     </application>
 
 </manifest>

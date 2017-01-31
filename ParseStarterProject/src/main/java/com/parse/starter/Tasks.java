@@ -69,9 +69,30 @@ public class Tasks extends AppCompatActivity implements TaskFeed.OnFragmentInter
             startActivity(addTaskIntent);
         }
         else if (item.getItemId() == R.id.project_details) {
-            Intent intent = new Intent(getApplicationContext(), ProjectDetails.class);
-            intent.putExtra("ProjectId", project.getObjectId());
-            startActivity(intent);
+            Intent projectDetailsIntent = new Intent(getApplicationContext(), ProjectDetails.class);
+            projectDetailsIntent.putExtra("ProjectId", project.getObjectId());
+            startActivity(projectDetailsIntent);
+        }
+        else if (item.getItemId() == R.id.to_do)
+        {
+            Intent toDoIntent = new Intent(getApplicationContext(), SpecificListTasks.class);
+            toDoIntent.putExtra("ProjectId", project.getObjectId());
+            toDoIntent.putExtra("TaskType", "To Do");
+            startActivity(toDoIntent);
+        }
+        else if (item.getItemId() == R.id.doing)
+        {
+            Intent doingIntent = new Intent(getApplicationContext(), SpecificListTasks.class);
+            doingIntent.putExtra("ProjectId", project.getObjectId());
+            doingIntent.putExtra("TaskType", "Doing");
+            startActivity(doingIntent);
+        }
+        else if (item.getItemId() == R.id.done)
+        {
+            Intent doneIntent = new Intent(getApplicationContext(), SpecificListTasks.class);
+            doneIntent.putExtra("ProjectId", project.getObjectId());
+            doneIntent.putExtra("TaskType", "Done");
+            startActivity(doneIntent);
         }
 
         return super.onOptionsItemSelected(item);
