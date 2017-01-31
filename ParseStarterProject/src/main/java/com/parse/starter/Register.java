@@ -27,12 +27,12 @@ public class Register extends AppCompatActivity {
     }
 
     public void Register(final View view) {
-        EditText etUsername = (EditText) findViewById(R.id.etUsername);
-        EditText etPassword = (EditText) findViewById(R.id.etPassword);
-        EditText etPassword2 = (EditText) findViewById(R.id.etPassword2);
-        EditText etEmail = (EditText) findViewById(R.id.etEmail);
-        EditText etName = (EditText) findViewById(R.id.etFullName);
-        EditText etCompanyName = (EditText) findViewById(R.id.etCompanyName);
+        final EditText etUsername = (EditText) findViewById(R.id.etUsername);
+        final EditText etPassword = (EditText) findViewById(R.id.etPassword);
+        final EditText etPassword2 = (EditText) findViewById(R.id.etPassword2);
+        final EditText etEmail = (EditText) findViewById(R.id.etEmail);
+        final EditText etName = (EditText) findViewById(R.id.etFullName);
+        final EditText etCompanyName = (EditText) findViewById(R.id.etCompanyName);
 
         if (etPassword.getText().toString().equals(etPassword2.getText().toString())) {
             ParseUser parseUser = new ParseUser();
@@ -49,7 +49,7 @@ public class Register extends AppCompatActivity {
                                 getApplicationContext(),
                                 "Account Created",
                                 Toast.LENGTH_SHORT
-                        );
+                        ).show();
                         redirectUser();
                     }
                     else {
@@ -57,7 +57,7 @@ public class Register extends AppCompatActivity {
                                 getApplicationContext(),
                                 e.getMessage(),
                                 Toast.LENGTH_SHORT
-                        );
+                        ).show();
                     }
                 }
             });
