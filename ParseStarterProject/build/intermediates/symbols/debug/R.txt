@@ -668,7 +668,7 @@ int id activity_project_details 0x7f0d009b
 int id activity_projects 0x7f0d009d
 int id activity_register 0x7f0d009f
 int id activity_specific_list_tasks 0x7f0d00a6
-int id activity_tasks 0x7f0d00a7
+int id activity_tasks 0x7f0d00a8
 int id add_project 0x7f0d00c1
 int id add_task 0x7f0d00c2
 int id adjust_height 0x7f0d0040
@@ -817,7 +817,7 @@ int id start 0x7f0d0025
 int id status_bar_latest_event_content 0x7f0d00b5
 int id submit_area 0x7f0d0084
 int id tabMode 0x7f0d000d
-int id taskFeed 0x7f0d00a8
+int id taskFeed 0x7f0d00a7
 int id text 0x7f0d00bc
 int id text1 0x7f0d0038
 int id text2 0x7f0d0039

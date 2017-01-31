@@ -39,48 +39,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_0ea90c57bca15a072fc18409c4622a37e86d1854\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
         <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_a634be295ef1ad9bb033720dbf37a1126684bf89\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
-        <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.8.0_62d3acb1a95cf2507ce9f75ec073142dd0845023\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fcf56b04fc93454fe22400306f3641cc6b5c82f5">
-        <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_bd1da9ef9fa9725f03515a6d26c23c3557a28b3d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
-        <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-9.8.0_eb9b7632f2471fdbb566ce5101e32d8fd4324a7c\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -93,30 +57,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
-        <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.8.0_e201fe67d6d4e7f0b1e578d475b578692b7179d6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\mnahm5\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
         <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_1bedf92c588823b9c832cf3720259d428bfd8732\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.0.0_42386f5778743d8d7fc1a5edda2500437cc5b042\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -142,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="45a9224f72754d244c96be1e74a08604d054b02a">
+        sha1="8706a565c488b3b275ae66e591c025b78e5764d5">
         <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f38a4918e7b5d1dea5dd788418daa893dee1553b\classes.dex" />
     </item>
     <item
@@ -153,6 +99,60 @@
         revision="23.0.1"
         sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
         <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_eb3770fd3b866bdadcbb055c00a482fcae59a9ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_0ea90c57bca15a072fc18409c4622a37e86d1854\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.8.0_62d3acb1a95cf2507ce9f75ec073142dd0845023\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2f6728a8f13b4beaf8e9c7aeee30112392fd3956">
+        <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_bd1da9ef9fa9725f03515a6d26c23c3557a28b3d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
+        <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-9.8.0_eb9b7632f2471fdbb566ce5101e32d8fd4324a7c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.8.0_e201fe67d6d4e7f0b1e578d475b578692b7179d6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.0.0_42386f5778743d8d7fc1a5edda2500437cc5b042\classes.dex" />
     </item>
 
 </items>

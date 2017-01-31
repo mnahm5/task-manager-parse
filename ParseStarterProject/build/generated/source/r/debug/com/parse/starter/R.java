@@ -2682,7 +2682,7 @@ containing a value of this type.
         public static final int activity_projects=0x7f0d009d;
         public static final int activity_register=0x7f0d009f;
         public static final int activity_specific_list_tasks=0x7f0d00a6;
-        public static final int activity_tasks=0x7f0d00a7;
+        public static final int activity_tasks=0x7f0d00a8;
         public static final int add_project=0x7f0d00c1;
         public static final int add_task=0x7f0d00c2;
         public static final int adjust_height=0x7f0d0040;
@@ -2831,7 +2831,7 @@ containing a value of this type.
         public static final int status_bar_latest_event_content=0x7f0d00b5;
         public static final int submit_area=0x7f0d0084;
         public static final int tabMode=0x7f0d000d;
-        public static final int taskFeed=0x7f0d00a8;
+        public static final int taskFeed=0x7f0d00a7;
         public static final int text=0x7f0d00bc;
         public static final int text1=0x7f0d0038;
         public static final int text2=0x7f0d0039;
@@ -3012,6 +3012,8 @@ containing a value of this type.
         public static final int Animation_AppCompat_Dialog=0x7f09008a;
         public static final int Animation_AppCompat_DropDownUp=0x7f09008b;
         public static final int Animation_Design_BottomSheetDialog=0x7f09008c;
+        /**  Customize your theme here. 
+         */
         public static final int AppTheme=0x7f09008d;
         public static final int AppTheme_AppBarOverlay=0x7f09008e;
         public static final int AppTheme_NoActionBar=0x7f090037;

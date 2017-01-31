@@ -50,8 +50,10 @@ public class TaskFeed extends Fragment {
         View view = inflater.inflate(R.layout.fragment_task_feed, container, false);
 
         String projectId = null;
+        String taskType = null;
         if (getArguments() != null) {
             projectId = getArguments().getString("projectId");
+            taskType = getArguments().getString("taskType");
         }
 
         final ListView lvTasks = (ListView) view.findViewById(R.id.lvTasks);
@@ -59,6 +61,11 @@ public class TaskFeed extends Fragment {
         if (projectId != null) {
             ParseQuery<ParseObject> query = ParseQuery.getQuery("Tasks");
             query.whereEqualTo("projectId", projectId);
+
+            if (taskType != null) {
+                query.whereEqualTo("type", taskType);
+            }
+
             query.orderByAscending("dueDate");
             query.findInBackground(new FindCallback<ParseObject>() {
                 @Override

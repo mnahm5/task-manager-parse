@@ -1,6 +1,8 @@
 package com.parse.starter;
 
 import android.content.Intent;
+import android.net.Uri;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -9,10 +11,15 @@ import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
-public class SpecificListTasks extends AppCompatActivity {
+public class SpecificListTasks extends AppCompatActivity implements TaskFeed.OnFragmentInteractionListener {
 
     private ParseObject project;
     private String taskType;
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +31,15 @@ public class SpecificListTasks extends AppCompatActivity {
         taskType = intent.getExtras().getString("TaskType");
         getProjectDetails(projectId);
 
+        Bundle bundle = new Bundle();
+        bundle.putString("projectId", projectId);
+        bundle.putString("taskType", taskType);
+        TaskFeed taskFeed = new TaskFeed();
+        taskFeed.setArguments(bundle);
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.taskFeed, taskFeed);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 
     private void getProjectDetails(String projetctId)
