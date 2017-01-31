@@ -51,57 +51,68 @@ public class TaskFeed extends Fragment {
 
         String projectId = null;
         String taskType = null;
+        ArrayList<String> userProjectIds = null;
         if (getArguments() != null) {
             projectId = getArguments().getString("projectId");
             taskType = getArguments().getString("taskType");
+            userProjectIds = getArguments().getStringArrayList("userProjectIds");
         }
 
         final ListView lvTasks = (ListView) view.findViewById(R.id.lvTasks);
 
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Tasks");
+
+        if (taskType != null) {
+            query.whereEqualTo("type", taskType);
+        }
+        else {
+            final ArrayList<String> taskTypes = new ArrayList<String>();
+            taskTypes.add("To Do");
+            taskTypes.add("Doing");
+            query.whereContainedIn("type", taskTypes);
+        }
         if (projectId != null) {
-            ParseQuery<ParseObject> query = ParseQuery.getQuery("Tasks");
             query.whereEqualTo("projectId", projectId);
+        }
+        else if (userProjectIds != null) {
+            query.whereContainedIn("projectId", userProjectIds);
+        }
 
-            if (taskType != null) {
-                query.whereEqualTo("type", taskType);
-            }
-
-            query.orderByAscending("dueDate");
-            query.findInBackground(new FindCallback<ParseObject>() {
-                @Override
-                public void done(List<ParseObject> objects, ParseException e) {
-                    if (e == null) {
-                        if (objects.size() > 0) {
-                            List<Map<String, String>> taskData = new ArrayList<Map<String, String>>();
-                            tasks = objects;
-                            for (ParseObject task: objects) {
-                                Map<String, String> taskInfo = new HashMap<String, String>();
-                                taskInfo.put("title", task.getString("title"));
-                                taskInfo.put("dueDate", task.getDate("dueDate").toString());
-                                taskData.add(taskInfo);
-                            }
-                            SimpleAdapter simpleAdapter = new SimpleAdapter(
-                                    getContext(),
-                                    taskData,
-                                    android.R.layout.simple_expandable_list_item_2,
-                                    new String[] {"title", "dueDate"},
-                                    new int[] {android.R.id.text1, android.R.id.text2});
-
-                            lvTasks.setAdapter(simpleAdapter);
+        query.orderByAscending("dueDate");
+        query.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> objects, ParseException e) {
+                if (e == null) {
+                    if (objects.size() > 0) {
+                        List<Map<String, String>> taskData = new ArrayList<Map<String, String>>();
+                        tasks = objects;
+                        for (ParseObject task: objects) {
+                            Map<String, String> taskInfo = new HashMap<String, String>();
+                            taskInfo.put("title", task.getString("title"));
+                            taskInfo.put("dueDate", task.getDate("dueDate").toString());
+                            taskData.add(taskInfo);
                         }
+                        SimpleAdapter simpleAdapter = new SimpleAdapter(
+                                getContext(),
+                                taskData,
+                                android.R.layout.simple_expandable_list_item_2,
+                                new String[] {"title", "dueDate"},
+                                new int[] {android.R.id.text1, android.R.id.text2});
+
+                        lvTasks.setAdapter(simpleAdapter);
                     }
                 }
-            });
+            }
+        });
 
-            lvTasks.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Intent intent = new Intent(getContext(), EditTask.class);
-                    intent.putExtra("taskId", tasks.get(position).getObjectId());
-                    startActivity(intent);
-                }
-            });
-        }
+        lvTasks.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getContext(), EditTask.class);
+                intent.putExtra("taskId", tasks.get(position).getObjectId());
+                startActivity(intent);
+            }
+        });
 
         return view;
     }

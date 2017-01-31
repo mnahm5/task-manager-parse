@@ -1,19 +1,35 @@
 package com.parse.starter;
 
 import android.content.Intent;
+import android.net.Uri;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.parse.FindCallback;
 import com.parse.Parse;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
 
 import org.w3c.dom.Text;
 
-public class Home extends AppCompatActivity {
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Home extends AppCompatActivity implements TaskFeed.OnFragmentInteractionListener {
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +37,15 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         setTitle("Home");
 
-        TextView tvWelcome = (TextView) findViewById(R.id.tvWelcome);
-        tvWelcome.setText(ParseUser.getCurrentUser().get("name").toString());
+        ArrayList<String> projectIds = getProjectIds();
+        Bundle bundle = new Bundle();
+        bundle.putStringArrayList("userProjectIds", projectIds);
+        TaskFeed taskFeed = new TaskFeed();
+        taskFeed.setArguments(bundle);
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.taskFeed, taskFeed);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 
     @Override
@@ -48,5 +71,28 @@ public class Home extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public ArrayList<String> getProjectIds()
+    {
+        final ArrayList<String> projectIds = new ArrayList<String>();
+
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Projects");
+        query.whereEqualTo("username", ParseUser.getCurrentUser().getUsername());
+        query.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> objects, ParseException e) {
+                if (e == null) {
+                    if (objects.size() > 0) {
+                        for (ParseObject project: objects) {
+                            String projectId = project.getObjectId();
+                            projectIds.add(projectId);
+                        }
+                    }
+                }
+            }
+        });
+
+        return projectIds;
     }
 }
