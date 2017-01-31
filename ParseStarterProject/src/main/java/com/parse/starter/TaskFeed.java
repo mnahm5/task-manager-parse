@@ -7,7 +7,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.view.GestureDetector;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -30,6 +32,7 @@ public class TaskFeed extends Fragment {
     private List<ParseObject> tasks = new ArrayList<>();
 
     private OnFragmentInteractionListener mListener;
+    private ListView lvTasks;
 
     public TaskFeed() {
 
@@ -63,7 +66,7 @@ public class TaskFeed extends Fragment {
             taskTypes.add("Doing");
         }
 
-        final ListView lvTasks = (ListView) view.findViewById(R.id.lvTasks);
+        lvTasks = (ListView) view.findViewById(R.id.lvTasks);
 
         if (projectIds != null && projectIds.size() > 0) {
             ParseQuery<ParseObject> query = ParseQuery.getQuery("Tasks");
@@ -112,6 +115,8 @@ public class TaskFeed extends Fragment {
                     startActivity(intent);
                 }
             });
+
+
         }
         else {
             Log.i("Error", "Projects not found");
