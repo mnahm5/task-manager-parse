@@ -14,6 +14,9 @@ import com.parse.GetCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
+import com.parse.ParseUser;
+
+import java.util.ArrayList;
 
 public class Tasks extends AppCompatActivity implements TaskFeed.OnFragmentInteractionListener {
 
@@ -42,7 +45,11 @@ public class Tasks extends AppCompatActivity implements TaskFeed.OnFragmentInter
         });
 
         Bundle bundle = new Bundle();
-        bundle.putString("projectId", projectId);
+
+        ArrayList<String> projectIds = new ArrayList<String>();
+        projectIds.add(projectId);
+        bundle.putStringArrayList("userProjectIds", projectIds);
+
         TaskFeed taskFeed = new TaskFeed();
         taskFeed.setArguments(bundle);
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
@@ -93,6 +100,15 @@ public class Tasks extends AppCompatActivity implements TaskFeed.OnFragmentInter
             doneIntent.putExtra("ProjectId", project.getObjectId());
             doneIntent.putExtra("TaskType", "Done");
             startActivity(doneIntent);
+        }
+        else if (item.getItemId() == R.id.logout) {
+            ParseUser.logOut();
+            Intent loginIntent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(loginIntent);
+        }
+        else if (item.getItemId() == R.id.home) {
+            Intent homeIntent = new Intent(getApplicationContext(), Home.class);
+            startActivity(homeIntent);
         }
 
         return super.onOptionsItemSelected(item);

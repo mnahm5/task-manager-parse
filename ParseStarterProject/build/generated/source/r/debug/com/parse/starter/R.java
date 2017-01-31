@@ -2990,20 +2990,23 @@ containing a value of this type.
         public static final int full_name=0x7f060033;
         public static final int hello_blank_fragment=0x7f060034;
         public static final int hello_world=0x7f060035;
-        public static final int parse_app_id=0x7f060036;
-        public static final int parse_client_key=0x7f060037;
-        public static final int password=0x7f060038;
-        public static final int project_description=0x7f060039;
-        public static final int project_details=0x7f06003a;
-        public static final int project_name=0x7f06003b;
-        public static final int re_type_password=0x7f06003c;
-        public static final int register=0x7f06003d;
-        public static final int save_changes=0x7f06003e;
+        public static final int home=0x7f060036;
+        public static final int logout=0x7f060037;
+        public static final int my_projects=0x7f060038;
+        public static final int parse_app_id=0x7f060039;
+        public static final int parse_client_key=0x7f06003a;
+        public static final int password=0x7f06003b;
+        public static final int project_description=0x7f06003c;
+        public static final int project_details=0x7f06003d;
+        public static final int project_name=0x7f06003e;
+        public static final int re_type_password=0x7f06003f;
+        public static final int register=0x7f060040;
+        public static final int save_changes=0x7f060041;
         public static final int status_bar_notification_info_overflow=0x7f060024;
-        public static final int textview=0x7f06003f;
-        public static final int title_activity_add_task=0x7f060040;
-        public static final int to_do=0x7f060041;
-        public static final int username=0x7f060042;
+        public static final int textview=0x7f060042;
+        public static final int title_activity_add_task=0x7f060043;
+        public static final int to_do=0x7f060044;
+        public static final int username=0x7f060045;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f090088;
@@ -3011,8 +3014,6 @@ containing a value of this type.
         public static final int Animation_AppCompat_Dialog=0x7f09008a;
         public static final int Animation_AppCompat_DropDownUp=0x7f09008b;
         public static final int Animation_Design_BottomSheetDialog=0x7f09008c;
-        /**  Customize your theme here. 
-         */
         public static final int AppTheme=0x7f09008d;
         public static final int AppTheme_AppBarOverlay=0x7f09008e;
         public static final int AppTheme_NoActionBar=0x7f090037;

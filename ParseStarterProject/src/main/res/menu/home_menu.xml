@@ -3,9 +3,9 @@
 
     <item
         android:id="@+id/projects"
-        android:title="My Projects"/>
+        android:title="@string/my_projects"/>
 
     <item
         android:id="@+id/logout"
-        android:title="Logout"/>
+        android:title="@string/logout"/>
 </menu>

@@ -84,6 +84,15 @@ public class Projects extends AppCompatActivity {
             Intent projectsIntent = new Intent(getApplicationContext(), AddProject.class);
             startActivity(projectsIntent);
         }
+        else if (item.getItemId() == R.id.logout) {
+            ParseUser.logOut();
+            Intent loginIntent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(loginIntent);
+        }
+        else if (item.getItemId() == R.id.home) {
+            Intent homeIntent = new Intent(getApplicationContext(), Home.class);
+            startActivity(homeIntent);
+        }
 
         return super.onOptionsItemSelected(item);
     }

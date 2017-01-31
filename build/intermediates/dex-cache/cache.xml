@@ -88,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="8706a565c488b3b275ae66e591c025b78e5764d5">
+        sha1="f62df96fea7c86307a0e79fd15698b631416139c">
         <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f38a4918e7b5d1dea5dd788418daa893dee1553b\classes.dex" />
     </item>
     <item
@@ -124,7 +124,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="2f6728a8f13b4beaf8e9c7aeee30112392fd3956">
+        sha1="e75d8de3e995c48345ff5424f3c1727e91b624b9">
         <dex dex="D:\Personal_Projects\Android Course\task-manager-parse\ParseStarterProject\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_bd1da9ef9fa9725f03515a6d26c23c3557a28b3d\classes.dex" />
     </item>
     <item

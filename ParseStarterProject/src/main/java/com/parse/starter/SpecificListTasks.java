@@ -11,6 +11,8 @@ import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
+import java.util.ArrayList;
+
 public class SpecificListTasks extends AppCompatActivity implements TaskFeed.OnFragmentInteractionListener {
 
     private ParseObject project;
@@ -32,8 +34,15 @@ public class SpecificListTasks extends AppCompatActivity implements TaskFeed.OnF
         getProjectDetails(projectId);
 
         Bundle bundle = new Bundle();
-        bundle.putString("projectId", projectId);
-        bundle.putString("taskType", taskType);
+
+        ArrayList<String> projectIds = new ArrayList<String>();
+        projectIds.add(projectId);
+        bundle.putStringArrayList("userProjectIds", projectIds);
+
+        ArrayList<String> taskTypes = new ArrayList<String>();
+        taskTypes.add(taskType);
+        bundle.putStringArrayList("taskTypes", taskTypes);
+
         TaskFeed taskFeed = new TaskFeed();
         taskFeed.setArguments(bundle);
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();

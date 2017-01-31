@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -38,14 +39,6 @@ public class Home extends AppCompatActivity implements TaskFeed.OnFragmentIntera
         setTitle("Home");
 
         ArrayList<String> projectIds = getProjectIds();
-        Bundle bundle = new Bundle();
-        bundle.putStringArrayList("userProjectIds", projectIds);
-        TaskFeed taskFeed = new TaskFeed();
-        taskFeed.setArguments(bundle);
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.taskFeed, taskFeed);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
     }
 
     @Override
@@ -88,6 +81,15 @@ public class Home extends AppCompatActivity implements TaskFeed.OnFragmentIntera
                             String projectId = project.getObjectId();
                             projectIds.add(projectId);
                         }
+                        Log.i("Info", "Projects Added");
+                        Bundle bundle = new Bundle();
+                        bundle.putStringArrayList("userProjectIds", projectIds);
+                        TaskFeed taskFeed = new TaskFeed();
+                        taskFeed.setArguments(bundle);
+                        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                        fragmentTransaction.replace(R.id.taskFeed, taskFeed);
+                        fragmentTransaction.addToBackStack(null);
+                        fragmentTransaction.commit();
                     }
                 }
             }
